@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.col-md-4 {
+    width: 400px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(92, 73, 73, 0.1);
+    border-radius: 8px;
+}
+
+.form-control {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* #add-icon {
+    float: right;
+    cursor: pointer;
+} */
+
+#task-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    margin-bottom: 10px;
+
+    background-color: #f0f0f0; /* Light background color */
+}
+
+#task-list li:nth-child(even) {
+    background-color: #dcdcdc; /* Dark background color for even items */
+}
+
+#edit-btn,
+#delete-btn {
+    cursor: pointer;
+}
+
+#edit-btn:hover,
+#delete-btn:hover {
+    color: red;
+}
